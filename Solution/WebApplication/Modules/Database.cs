@@ -20,12 +20,12 @@ namespace WebApplication.Modules
 
         private bool Connection()
         {
-            string host = "192.168.3.149";
+            string host = "gdc3.gudi.kr";
             string user = "root";
             string password = "1234";
             string db = "gudi";
-            //string port = "";
-            string connStr = string.Format("server={0};uid={1};password={2};database={3};port={4}", host, user, password,db/*,port*/);
+            string port = "24002";
+            string connStr = string.Format("server={0};uid={1};password={2};database={3};port={4}", host, user, password,db,port);
             MySqlConnection conn = new MySqlConnection(connStr);
 
             try
